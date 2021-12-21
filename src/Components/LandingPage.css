@@ -1,3 +1,52 @@
 body {
   background-color: #333333;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.width-default {
+  max-width: 1024px;
+}
+
+.header {
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar h3 {
+  font-weight: 400;
+}
+
+.navbar input {
+  background-color: black;
+  text-decoration: none;
+}
+
+.navbar h3::before {
+  content: "";
+  width: 100%;
+  color: #c69cf4;
+}
+
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
